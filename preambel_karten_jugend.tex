@@ -19,6 +19,7 @@
 \usepackage[osf]{libertine}
 \usepackage{microtype}
 \usepackage[german]{layout}
+\usepackage{tikz}
 \usepackage{tcolorbox}
 \tcbuselibrary{raster,skins}
 \usepackage{eso-pic}
@@ -75,6 +76,8 @@
 \newcommand\freefootnote[1]{\let\thefootnote\relax\footnotetext{#1}\let\thefootnote\svthefootnote}
 %%------------------------------------------------------------------------------
 \tcbset{width=\textwidth,height=\textheight,right=12pt,left=12pt,colback=white,fonttitle=\bfseries}
+%%------------------------------------------------------------------------------
+\newcommand\ShowBelt[1]{\put(226,177){\parbox[b][\paperheight]{\paperwidth}{\vfill\centering\includegraphics[width=48pt,keepaspectratio]{#1}\vfill}}}
 %%------------------------------------------------------------------------------
 %%EOF
 %%------------------------------------------------------------------------------
